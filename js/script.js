@@ -1,27 +1,79 @@
-console.log('OK JS!!!!!')
+console.log('OK JS!!!!!');
 
-let max = 10;
+/*
 
-const container = document.getElementById('auguri');
-container.innerText = max;
+// F.ne arrow estesa
+const getDiv = id => document.getElementById(id);
 
-const clock = setInterval(myFunctionInterval, 1000);    // verrà eseguito ogni secondo (1000ms)
-console.log('identificatore del setInterval', clock);   // posso usarla per cancellare il setInterval
+//questa funzione mi permette di selezionare gli id che indicherò nella parentesi quando chiamo la f.ne
+// infatti:
+const redDiv = getDiv('red');
+const greenDiv = getDiv('green');
 
 
 
-function myFunctionInterval() {
-    console.log('sono in myFunctionInterval e sono eseguito ogni tot a meno che non mi cancelli');
-    max--;
-    container.innerText = max;
-    console.log(max);
-    if (max <= 0) {
-        clearInterval(clock); // cancello il setInterval e fermo tutto
-        makeWishes();         // faccio apparire la scritta di buon anno
+
+function addNumberToDiv(element, number) {
+    const newElement = document.createElement('div');
+    //    newElement.id = 'id-'+number;
+    //    newElement.setAttribute('id',  'id-'+number);
+    //    newElement.classList.add remove toggle
+    newElement.innerText = number;
+
+    element.appendChild(newElement);
+
+}
+
+
+
+function createNumberedArray(length, arrayMaxNumber) {
+    const array = [];
+    while (array.length < length) {
+        array.push(generateRandomNumber(1, arrayMaxNumber));
     }
+    return array;
+}
+
+
+
+
+function generateRandomNumber(min, max) {
+    const range = max - min + 1;
+
+    return Math.floor(Math.random() * range) + min;
 
 }
 
-function makeWishes() {
-    container.innerText = 'Buon Anno!';
+
+
+function isPariODispari(num) {
+
+    if (num % 2 === 0) {
+        return 'pari';
+    }
+    else {
+        return 'dispari';
+    }
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
